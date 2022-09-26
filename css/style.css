@@ -1,0 +1,61 @@
+body{
+    background-color: antiquewhite;
+}
+h1{
+    text-align: center;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+}
+main{
+    display: flex;
+}
+img{
+    width: 50%;
+}
+.un{
+    background-color: blue;
+    display: flex;
+    width: 50%;
+}
+.deux{
+    background-color: red;
+    width: 50%;
+}
+/* media queries */
+@media screen and (max-width:1024px){
+    body{
+        background-color: black;
+        color: white;
+    }
+    .un{
+        background-color: cadetblue;
+    }
+    .deux{
+        background-color: darkkhaki;
+    }
+}
+
+/* media queries tel */
+@media all and (max-device-width:480px){
+    main{
+        display: flex;
+        flex-direction: column;
+    }
+    .un{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* @media screen and(min-width:200px) and (max-width:780px){
+} */
+/*point de rupture
+Desktop : au delà de 1024 pixels
+Tablette : entre 600 et 1024 pixels (en mode portrait)
+Mobile : entre 320 et 600 pixels (en mode portrait)
+cela sont des moyennes de tailles d ecran */
+/* https://angrytools.com/css/mediaquery/
+http://giona.net/tools/css3-mediaquery-generator/
+https://simplecss.eu/ */
